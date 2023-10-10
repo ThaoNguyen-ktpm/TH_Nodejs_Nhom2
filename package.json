@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "build": "babel src -d dist",
     "start": "nodemon --exec babel-node --inspect src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,15 +20,18 @@
   },
   "homepage": "https://github.com/ThaoNguyen-ktpm/TH_Nodejs_Nhom2#readme",
   "dependencies": {
+    "connect-flash": "^0.1.1",
     "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
     "express": "^4.18.1",
+    "express-session": "^1.17.3",
     "mysql2": "^3.6.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.8",
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.0",
     "@babel/node": "^7.22.6",
-    "@babel/preset-env": "^7.22.7",
+    "@babel/preset-env": "^7.22.20",
     "nodemon": "^3.0.1"
   }
 }
